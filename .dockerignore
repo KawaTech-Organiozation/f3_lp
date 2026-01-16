@@ -5,11 +5,15 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Build outputs
+# Build outputs (but keep package-lock.json!)
 dist/
 build/
 .next/
 out/
+
+# Explicitly include package files (override wildcards above)
+!package.json
+!package-lock.json
 
 # Environment variables
 .env
