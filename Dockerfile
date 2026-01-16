@@ -19,8 +19,8 @@ RUN npm run build
 # Production stage
 FROM node:20-alpine
 
-# Install dumb-init for proper signal handling
-RUN apk add --no-cache dumb-init
+# Install dumb-init and build tools for native dependencies
+RUN apk add --no-cache dumb-init python3 make g++
 
 # Set working directory
 WORKDIR /app
@@ -29,7 +29,10 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 
 # Install production dependencies only
-RUN npm ci --production && npm cache clean --force
+RUN npm ci --omit=dev && npm cache clean --force
+
+# Remove build tools to reduce image size (keep if needed for runtime)
+RUN apk del make g++
 
 # Copy built application from builder
 COPY --from=builder /app/dist ./dist
