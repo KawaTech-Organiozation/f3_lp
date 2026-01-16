@@ -1,14 +1,17 @@
 # Build stage
 FROM node:20-alpine AS builder
 
+# Install build tools for native dependencies
+RUN apk add --no-cache python3 make g++
+
 # Set working directory
 WORKDIR /app
 
-# Copy package files
-COPY package.json package-lock.json* ./
+# Copy npm config and package files
+COPY .npmrc package.json package-lock.json ./
 
-# Install dependencies
-RUN npm ci
+# Install dependencies with increased memory and timeout
+RUN npm install --prefer-offline --no-audit
 
 # Copy source code
 COPY . .
@@ -25,11 +28,11 @@ RUN apk add --no-cache dumb-init python3 make g++
 # Set working directory
 WORKDIR /app
 
-# Copy package files
-COPY package.json package-lock.json* ./
+# Copy npm config and package files
+COPY .npmrc package.json package-lock.json ./
 
 # Install production dependencies only
-RUN npm ci --omit=dev && npm cache clean --force
+RUN npm install --omit=dev --prefer-offline --no-audit && npm cache clean --force
 
 # Remove build tools to reduce image size (keep if needed for runtime)
 RUN apk del make g++
