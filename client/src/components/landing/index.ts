@@ -1,0 +1,9 @@
+export { PorQueF3Section } from "./PorQueF3Section";
+export { AdministradorasSection } from "./AdministradorasSection";
+export { ResultadosSection } from "./ResultadosSection";
+export { NossaOperacaoSection } from "./NossaOperacaoSection";
+export { ProcessoSection } from "./ProcessoSection";
+export { CTASection } from "./CTASection";
+export { ParaQuemSection } from "./ParaQuemSection";
+export { SobreSection } from "./SobreSection";
+export { FAQSection } from "./FAQSection";
