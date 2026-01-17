@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/SectionHeading";
+import { MetricCard } from "./MetricCard";
 
 export function NossaOperacaoSection() {
   const metrics = [
@@ -11,27 +11,29 @@ export function NossaOperacaoSection() {
   ];
 
   return (
-    <section id="nossa-operacao" className="py-24 bg-primary text-white">
-      <div className="container mx-auto px-4 sm:px-6">
+    <section
+      id="nossa-operacao"
+      className="py-24 bg-gradient-to-br from-primary via-primary to-primary/90 text-white relative overflow-hidden"
+    >
+      {/* Elementos decorativos de fundo */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <SectionHeading
           title="A força da nossa operação"
           light
           centered
         />
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 mt-12 max-w-6xl mx-auto">
           {metrics.map((item, i) => (
-            <motion.div
+            <MetricCard
               key={i}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="text-center"
-            >
-              <p className="text-4xl md:text-5xl font-bold text-accent mb-2">{item.value}</p>
-              <p className="text-white/70 text-sm">{item.label}</p>
-            </motion.div>
+              value={item.value}
+              label={item.label}
+              index={i}
+            />
           ))}
         </div>
       </div>
