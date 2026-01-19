@@ -54,7 +54,7 @@ export function QuemEF3Section() {
             </div>
             <ScrollLink to="contact" smooth={true} offset={-80}>
               <Button className="mt-8 text-lg px-8 py-6 rounded-xl bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/20">
-                Quero saber mais
+                QUERO SABER MAIS
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </ScrollLink>

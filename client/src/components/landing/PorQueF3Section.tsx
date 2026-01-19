@@ -9,7 +9,7 @@ export function PorQueF3Section() {
     "Materiais e campanhas para apoiar suas vendas",
     "Treinamentos frequentes e desenvolvimento contínuo",
     "Suporte estratégico para crescimento",
-    "Operação organizada e direcionada a resultado",
+    // "Operação organizada e direcionada a resultado",
     "Acesso a um ecossistema que fortalece sua atuação",
   ];
 

@@ -6,7 +6,7 @@
 
 :root {
   /* F3 Partners Brand Colors - Laranja, Cinza, Branco */
-  /* LARANJA: #F59C00 | CINZA: #C5CDD1 | BRANCO: #FFFFFF | BACKGROUND: #EFEFEF */
+  /* LARANJA: #EE6A06 | CINZA: #C5CDD1 | BRANCO: #FFFFFF | BACKGROUND: #EFEFEF */
 
   --font-display: 'DM Sans', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -16,7 +16,7 @@
   --foreground: 0 0% 20%;          /* Texto escuro */
 
   /* Primary (Laranja F3) */
-  --primary: 37 100% 48%;          /* #F59C00 */
+  --primary: 26 95% 48%;           /* #EE6A06 */
   --primary-foreground: 0 0% 100%; /* Branco */
 
   /* Secondary (Cinza F3) */
@@ -28,7 +28,7 @@
   --muted-foreground: 0 0% 45%;
 
   /* Accent (Laranja para CTAs) */
-  --accent: 37 100% 48%;           /* #F59C00 */
+  --accent: 26 95% 48%;            /* #EE6A06 */
   --accent-foreground: 0 0% 100%;
 
   /* Destructive */
@@ -38,7 +38,7 @@
   /* Borders & Inputs */
   --border: 200 10% 80%;           /* Cinza */
   --input: 200 10% 80%;
-  --ring: 37 100% 48%;             /* Laranja */
+  --ring: 26 95% 48%;              /* #EE6A06 */
 
   /* Cards */
   --card: 0 0% 100%;               /* Branco */

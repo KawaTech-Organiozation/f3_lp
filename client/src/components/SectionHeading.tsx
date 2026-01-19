@@ -6,9 +6,10 @@ interface SectionHeadingProps {
   subtitle?: string;
   centered?: boolean;
   light?: boolean;
+  nowrap?: boolean;
 }
 
-export function SectionHeading({ badge, title, subtitle, centered = false, light = false }: SectionHeadingProps) {
+export function SectionHeading({ badge, title, subtitle, centered = false, light = false, nowrap = false }: SectionHeadingProps) {
   return (
     <div className={`mb-12 ${centered ? "text-center mx-auto max-w-3xl" : "max-w-2xl"}`}>
       {badge && (
@@ -28,7 +29,7 @@ export function SectionHeading({ badge, title, subtitle, centered = false, light
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-4 ${light ? "text-white" : "text-primary"}`}
+        className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-4 ${light ? "text-white" : "text-primary"} ${nowrap ? "whitespace-nowrap" : ""}`}
       >
         {title}
       </motion.h2>

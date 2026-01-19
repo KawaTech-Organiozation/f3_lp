@@ -20,8 +20,16 @@ export function HeroSection() {
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
               Parceria para quem busca escala
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.1] mb-6 text-primary">
-              F3 | Master em expansão e <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">desenvolvimento</span> de parceiros.
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.1] mb-6"
+              style={{
+                background: 'linear-gradient(to bottom, #fd9500, #f49600, #f28d00, #f18500, #f08100, #ef7700, #ee7007, #f56800)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              F3 | Master em expansão e desenvolvimento de parceiros.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 max-w-xl">
               Estrutura, suporte e estratégia para potencializar resultados em operações de consórcio.
@@ -34,7 +42,7 @@ export function HeroSection() {
               </ScrollLink>
               <ScrollLink to="about" smooth={true} offset={-80}>
                 <Button variant="outline" size="lg" className="text-lg px-8 py-6 rounded-xl border-2 hover:bg-secondary/50 w-full sm:w-auto">
-                  Conhecer modelo
+                  CONHECER MODELO
                 </Button>
               </ScrollLink>
             </div>
@@ -59,12 +67,12 @@ export function HeroSection() {
                 className="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-xl border border-border z-20"
               >
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-green-100 rounded-lg text-green-600">
+                  <div className="p-2 bg-gray-100 rounded-lg text-gray-600">
                     <TrendingUp className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground font-semibold uppercase">Crescimento</p>
-                    <p className="text-lg font-bold text-primary">+127% YoY</p>
+                    <p className="text-xs text-primary font-semibold lowercase">Crescimento</p>
+                    {/* <p className="text-lg font-bold text-primary">+127% YoY</p> */}
                   </div>
                 </div>
               </motion.div>
@@ -75,12 +83,12 @@ export function HeroSection() {
                 className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-border z-20"
               >
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-blue-100 rounded-lg text-blue-600">
+                  <div className="p-2 bg-gray-100 rounded-lg text-gray-600">
                     <ShieldCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground font-semibold uppercase">Parceiros</p>
-                    <p className="text-lg font-bold text-primary">Alta Performance</p>
+                    <p className="text-xs text-muted-foreground font-semibold lowercase">Parceiros</p>
+                    <p className="text-lg font-bold text-primary lowercase">Alta Performance</p>
                   </div>
                 </div>
               </motion.div>

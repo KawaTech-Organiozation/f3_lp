@@ -9,14 +9,14 @@ export function Footer() {
           <div>
             <div className="mb-6 flex items-center gap-3">
               <img
-                src="/images/logo.jpeg"
+                src="/images/Logo_negativo.PNG"
                 alt="F3 Partners Logo"
-                className="h-12 w-auto"
+                className="h-12 w-auto brightness-0 invert"
                 loading="lazy"
               />
-              <span className="text-sm font-semibold text-white">
+              {/* <span className="text-sm font-semibold text-white">
                 Gestão de Parceiros
-              </span>
+              </span> */}
             </div>
             <p className="text-white/70 max-w-sm leading-relaxed">
               Especialistas em estruturar, desenvolver e acelerar redes de vendas no mercado de consórcios.

@@ -26,11 +26,11 @@ export default function LandingPage() {
       <BenefitsSection />
       <PorQueF3Section />
       <AdministradorasSection />
-      <ResultadosSection />
-      <NossaOperacaoSection />
-      <ProcessoSection />
+      {/* <ResultadosSection /> */}
+      {/* <NossaOperacaoSection /> */}
+      <ProcessoSection /> {/*laranjaaaaa */}
       <CTASection />
-      <ParaQuemSection />
+      {/* <ParaQuemSection /> */}
       <SobreSection />
       <FAQSection />
 

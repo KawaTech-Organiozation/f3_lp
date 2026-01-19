@@ -9,7 +9,7 @@ export function SobreSection() {
           <div>
             <SectionHeading
               light
-              badge="Sobre a F3"
+              // badge="Sobre a F3"
               title="Transformamos potencial em performance."
               subtitle="Operar sozinho no mercado de consórcios limita seu crescimento. A falta de processos, treinamentos e acesso a boas condições comerciais são barreiras invisíveis."
             />

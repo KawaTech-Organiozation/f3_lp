@@ -11,16 +11,23 @@ export function ProcessoSection() {
   ];
 
   return (
-    <section id="process" className="py-24 bg-secondary/30">
+    <section
+      id="process"
+      className="py-24"
+      style={{
+        background: 'linear-gradient(to bottom, #fd9500, #f49600, #f28d00, #f18500, #f08100, #ef7700, #ee7007, #f56800)',
+      }}
+    >
       <div className="container mx-auto px-4 sm:px-6">
         <SectionHeading
-          title="Como você pode se tornar parceiro."
+          title="Como você pode se tornar parceiro:"
           centered
+          light
         />
 
         <div className="relative mt-16 max-w-6xl mx-auto">
           {/* Connecting line */}
-          <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-border hidden md:block -z-10" />
+          <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-white/30 hidden md:block -z-10" />
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             {steps.map((item, i) => (
@@ -30,12 +37,12 @@ export function ProcessoSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white p-6 rounded-xl border border-border shadow-sm text-center md:text-left relative group"
+                className="bg-gray-100/80 p-6 rounded-xl border border-white/20 shadow-sm text-center md:text-left relative group"
               >
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 mx-auto md:mx-0 shadow-lg shadow-primary/20 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-white text-primary rounded-full flex items-center justify-center font-bold text-lg mb-4 mx-auto md:mx-0 shadow-lg shadow-black/10 group-hover:scale-110 transition-transform">
                   {item.step}
                 </div>
-                <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+                <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
               </motion.div>
             ))}

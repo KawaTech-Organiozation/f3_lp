@@ -7,14 +7,15 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img
-            src="/images/logo.jpeg"
+            // src="/images/logo.PNG"
+            src="/images/Logo_positivo.PNG"            
             alt="F3 Partners Logo"
             className="h-12 w-auto"
             loading="eager"
           />
-          <span className="text-sm font-semibold text-muted-foreground hidden sm:inline-block">
+          {/* <span className="text-sm font-semibold text-muted-foreground hidden sm:inline-block">
             Gestão de Parceiros
-          </span>
+          </span> */}
         </div>
         <div className="hidden lg:flex items-center gap-6 text-sm font-medium text-muted-foreground">
           <ScrollLink to="quem-e-f3" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">A F3</ScrollLink>
@@ -26,7 +27,7 @@ export function Navbar() {
         </div>
         <ScrollLink to="contact" smooth={true} offset={-80}>
           <Button className="font-semibold bg-primary text-white shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all">
-            Seja um Parceiro
+            SEJA UM PARCEIRO
           </Button>
         </ScrollLink>
       </div>

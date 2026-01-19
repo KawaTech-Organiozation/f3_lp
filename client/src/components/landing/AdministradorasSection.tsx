@@ -4,9 +4,9 @@ export function AdministradorasSection() {
   return (
     <section id="administradoras" className="py-16 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 text-center">
-        <p className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
           Trabalhamos com as principais administradoras do mercado
-        </p>
+        </h2>
         <p className="text-muted-foreground max-w-3xl mx-auto mb-4">
           A F3 atua em parceria com grandes administradoras do setor de consórcios,
           garantindo produtos sólidos, seguros e competitivos para nossos parceiros.

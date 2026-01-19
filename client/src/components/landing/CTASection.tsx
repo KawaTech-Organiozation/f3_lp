@@ -16,7 +16,7 @@ export function CTASection() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-border">
-                <div className="bg-green-100 p-2 rounded-lg text-green-700 mt-1">
+                <div className="bg-gray-100 p-2 rounded-lg text-gray-700 mt-1">
                   <TrendingUp className="w-5 h-5" />
                 </div>
                 <div>
@@ -25,7 +25,7 @@ export function CTASection() {
                 </div>
               </div>
               <div className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-border">
-                <div className="bg-blue-100 p-2 rounded-lg text-blue-700 mt-1">
+                <div className="bg-gray-100 p-2 rounded-lg text-gray-700 mt-1">
                   <Handshake className="w-5 h-5" />
                 </div>
                 <div>
@@ -34,7 +34,7 @@ export function CTASection() {
                 </div>
               </div>
               <div className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-border">
-                <div className="bg-purple-100 p-2 rounded-lg text-purple-700 mt-1">
+                <div className="bg-gray-100 p-2 rounded-lg text-gray-700 mt-1">
                   <Briefcase className="w-5 h-5" />
                 </div>
                 <div>
