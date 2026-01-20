@@ -15,6 +15,7 @@ import {
   SobreSection,
   FAQSection,
 } from "@/components/landing";
+import { WhatsAppFloatingButton } from "@/components/WhatsAppFloatingButton";
 
 export default function LandingPage() {
   return (
@@ -35,6 +36,8 @@ export default function LandingPage() {
       <FAQSection />
 
       <Footer />
+
+      <WhatsAppFloatingButton />
     </div>
   );
 }

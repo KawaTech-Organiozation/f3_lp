@@ -20,11 +20,11 @@ export function SobreSection() {
             <div className="grid grid-cols-2 gap-6">
               <div className="border-l-4 border-accent pl-4">
                 <h4 className="font-bold text-2xl mb-1">Expertise</h4>
-                <p className="text-white/60 text-sm">Anos de mercado</p>
+                {/* <p className="text-white/60 text-sm">Anos de mercado</p> */}
               </div>
               <div className="border-l-4 border-accent pl-4">
                 <h4 className="font-bold text-2xl mb-1">Governança</h4>
-                <p className="text-white/60 text-sm">Processos validados</p>
+                {/* <p className="text-white/60 text-sm">Processos validados</p> */}
               </div>
             </div>
           </div>

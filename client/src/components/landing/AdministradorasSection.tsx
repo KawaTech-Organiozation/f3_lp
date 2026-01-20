@@ -1,5 +1,27 @@
+interface PartnerLogo {
+  name: string;
+  src: string;
+  alt: string;
+}
+
 export function AdministradorasSection() {
-  const brands = ["ADM", "ADM", "ADM", "ADM", "ADM"];
+  const partners: PartnerLogo[] = [
+    {
+      name: "Âncora Consórcios",
+      src: "/images/ancoraconsorcios.png",
+      alt: "Logo Âncora Consórcios",
+    },
+    {
+      name: "Bradesco Consórcios",
+      src: "/images/bradesco-consorcio.jpg",
+      alt: "Logo Bradesco Consórcios",
+    },
+    {
+      name: "Consórcio Suzuki",
+      src: "/images/suzuki-consorcio.webp",
+      alt: "Logo Consórcio Suzuki",
+    },
+  ];
 
   return (
     <section id="administradoras" className="py-16 bg-secondary/30">
@@ -15,11 +37,19 @@ export function AdministradorasSection() {
           Essas conexões fortalecem nossa operação e permitem entregar uma experiência
           completa, transparente e com alta credibilidade.
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-          {brands.map((brand, i) => (
-            <span key={i} className="text-xl md:text-2xl font-bold text-gray-400 hover:text-primary cursor-default">
-              {brand}
-            </span>
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          {partners.map((partner) => (
+            <div
+              key={partner.name}
+              className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+            >
+              <img
+                src={partner.src}
+                alt={partner.alt}
+                className="h-12 md:h-16 w-auto max-w-[150px] md:max-w-[180px] object-contain"
+                loading="lazy"
+              />
+            </div>
           ))}
         </div>
       </div>

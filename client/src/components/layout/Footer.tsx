@@ -1,5 +1,5 @@
 import { Link as ScrollLink } from "react-scroll";
-import { Building2, Users2 } from "lucide-react";
+import { Building2, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   return (
@@ -28,9 +28,26 @@ export function Footer() {
               <p className="flex items-center gap-2">
                 <Building2 className="w-4 h-4" /> São Paulo - SP
               </p>
-              <p className="flex items-center gap-2">
-                <Users2 className="w-4 h-4" /> Comercial: contato@f3partners.com.br
-              </p>
+              <a
+                href="https://wa.me/5511971877717"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <Phone className="w-4 h-4" /> +55 (11) 97187-7717
+              </a>
+              <a
+                href="mailto:danieladegrande@f3parceiros.com.br"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <Mail className="w-4 h-4" /> danieladegrande@f3parceiros.com.br
+              </a>
+              <a
+                href="mailto:contato@f3parceiros.com.br"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <Mail className="w-4 h-4" /> contato@f3parceiros.com.br
+              </a>
             </div>
           </div>
           <div>
