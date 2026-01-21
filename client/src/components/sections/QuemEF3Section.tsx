@@ -22,9 +22,36 @@ export function QuemEF3Section() {
               <div className="relative aspect-[3/4]">
                 <img
                   src={getDailySociaImage()}
-                  alt="Parceira F3"
+                  alt="Daniela D'Grande - CEO F3 Parcerias"
                   className="rounded-2xl shadow-2xl object-cover w-full h-full relative z-10 bg-white"
                 />
+                {/* Overlay com nome e cargo */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  className="absolute bottom-0 left-0 right-0 z-20 p-6 rounded-b-2xl bg-gradient-to-t from-black/70 via-black/40 to-transparent"
+                >
+                  <motion.p
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.8 }}
+                    className="text-white font-bold text-xl"
+                  >
+                    Daniela D'Grande
+                  </motion.p>
+                  <motion.p
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 1.0 }}
+                    className="text-white/80 text-sm"
+                  >
+                    CEO | F3 Parcerias
+                  </motion.p>
+                </motion.div>
                 <div className="absolute -bottom-4 -right-4 w-full h-full bg-primary/10 rounded-2xl -z-10" />
               </div>
             </div>
