@@ -56,9 +56,11 @@ export function HeroSection() {
           >
             <div className="relative aspect-square">
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop"
+                // src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop"
+                src="/images/LP_F3_8.JPG"
+                // src="/images/LP_F3_6.JPG"                
                 alt="Business Strategy"
-                className="rounded-2xl shadow-2xl object-cover w-full h-full z-10 relative border-8 border-white"
+                className="rounded-2xl shadow-2xl object-cover w-full h-full z-12 relative border-8 border-white"
               />
 
               <motion.div

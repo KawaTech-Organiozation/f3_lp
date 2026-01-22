@@ -31,7 +31,9 @@ export function SobreSection() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent rounded-2xl transform rotate-3" />
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop"
+              // src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop"
+              // src="/images/LP_F3_9.JPG"
+              src="/images/LP_F3_7.JPG"
               alt="Team working together"
               className="rounded-2xl shadow-2xl relative z-10 border border-white/10"
             />

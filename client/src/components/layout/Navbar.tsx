@@ -21,9 +21,10 @@ export function Navbar() {
           <ScrollLink to="quem-e-f3" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">A F3</ScrollLink>
           <ScrollLink to="benefits" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">Benefícios</ScrollLink>
           <ScrollLink to="por-que-f3" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">Por Que F3</ScrollLink>
-          <ScrollLink to="resultados" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">Resultados</ScrollLink>
+          <ScrollLink to="administradoras" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">Parceiros</ScrollLink>
           <ScrollLink to="process" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">Como Funciona</ScrollLink>
-          <ScrollLink to="para-quem" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">Para Quem</ScrollLink>
+          <ScrollLink to="about" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">Sobre</ScrollLink>
+          <ScrollLink to="faq" smooth={true} offset={-80} className="hover:text-primary cursor-pointer transition-colors">FAQ</ScrollLink>
         </div>
         <ScrollLink to="contact" smooth={true} offset={-80}>
           <Button className="font-semibold bg-primary text-white shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all">
