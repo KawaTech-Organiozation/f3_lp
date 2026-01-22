@@ -15,6 +15,7 @@ dist/
 drizzle/
 *.db
 *.sqlite
+*.zip
 
 # Logs
 logs/
@@ -40,3 +41,6 @@ Thumbs.db
 
 # Claude plans
 .claude/
+client/public/Logo Bradesco png.zip
+client/public/Logo F3.zip
+client/public/Logo Suzuki PNG .zip
